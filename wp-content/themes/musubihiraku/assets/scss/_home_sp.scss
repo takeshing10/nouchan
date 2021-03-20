@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    home_sp.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+@include breakpoint(sp){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    max-width : 750px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_home{
+
+.post_list{
+    margin: 0 auto;
+    padding: vs(80);
+    
+    li{
+        width: 100%;
+        padding: vp(200) 0;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            max-width: 90%;
+        }
+        
+        a{
+            display: block;
+        }
+        
+        .bg_inner{
+            background-size: contain;
+            transition: transform .65s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .is_pc &:hover .bg_inner,
+        .is_sp & .bg_inner{
+            transform: scale(1.03);
+        }
+    }
+}
+
+}
+
+}/* -------------------------------------------------- */

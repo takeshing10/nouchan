@@ -1,0 +1,90 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    about_sp.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+@include breakpoint(sp){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    max-width : 750px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_about{
+width: 100%;
+height: 100vh;
+display: table;
+vertical-align: middle;
+padding: vs(240) 0 vs(100) 0;
+box-sizing: border-box;
+
+#profile_wrap{
+    display: table-cell;
+    vertical-align: middle;
+
+    .inner{
+        padding: 0 vs(40);
+        margin: 0 auto;
+        
+        .w{
+            padding: 0 vs(20);
+            position: relative;
+            
+            &:after{
+                content: '';
+                display: block;
+                width: vs(40);
+                height: 1px;
+                background-color: #ccc;
+                position: absolute;
+                left: 0;
+                top: vs(-60);
+            }
+        }
+        
+        h2{
+            font-size: vs(28);
+            letter-spacing: .12em;
+            margin-bottom: vs(120);
+        }
+        
+        h3{
+            margin-bottom: vs(30);
+            font-size: vs(36);
+            letter-spacing: .12em;
+            font-weight: bold;
+        }
+        
+        h4{
+            margin-bottom: vs(30);
+            font-size: vs(36);
+            letter-spacing: .06em;
+            font-weight: bold;
+        }
+        
+        .job{
+            font-size: vs(26);
+            letter-spacing: .08em;
+            margin-bottom: vs(40);
+        }
+        
+        .desc{
+            margin-bottom: vs(160);
+            
+            p{
+                font-size: vs(26);
+                margin-bottom: 1.5em;
+                line-height: 2em;
+                letter-spacing: .08em;
+            }
+        }
+    }
+}
+
+}
+
+}/* -------------------------------------------------- */

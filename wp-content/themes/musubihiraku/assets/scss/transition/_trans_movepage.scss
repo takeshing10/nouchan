@@ -1,0 +1,212 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    transition/movepage
+*
+*
+------------------------------------------------------------------------------------------ */
+.pj_container{
+    opacity: 0;
+}
+
+.load .pj_container{
+    opacity: 1;
+    transition: opacity 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) .35s;
+}
+
+.leave .b_container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+._current{
+    opacity: 1 !important;
+    z-index: 10001 !important;
+}
+
+._next{
+    opacity: 1 !important;
+    z-index: 101 !important;
+}
+
+#b_c{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 65535;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.lock #b_c{
+    pointer-events: inherit;
+    position: fixed;
+    display: block;
+    opacity: 1;
+}
+
+
+.pj_t{
+    opacity: 1;
+    transition: opacity;
+    transition-duration: .65s;
+}
+
+.leave .pj_t{
+    opacity: 0 !important;
+    transition: opacity;
+    transition-duration: .45s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.enter .pj_t{
+    opacity: 1;
+    transition: opacity .65s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+@include breakpoint(sp){
+h1{
+    position: fixed;
+    z-index: 65535;
+}
+
+#gnav{
+    opacity: 0;
+    transition: opacity;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+    pointer-events: none;
+    
+    ul{
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity, transform;
+        transition-duration: .0s;
+        transition-delay: .35s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    li{
+        opacity: 0;
+        transform: translateY(15px);
+        transition: opacity, transform;
+        transition-duration: .0s;
+        transition-delay: .35s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform-origin: left top;
+    }
+    
+    .copy{
+        opacity: 0;
+        transition: opacity .25s ease;
+    }
+    
+    &.on{
+        opacity: 1;
+        transition-duration: .6s;
+        pointer-events: inherit;
+        
+        ul{
+            opacity: 1;
+            transform: translateY(0px);
+            transition-duration: 2s;
+            transition-delay: 0s;
+        }
+        
+        li{
+            opacity: 1;
+            transform: translateY(0px);
+            transition-duration: .6s;
+            transition-delay: 0s;
+        }
+    }
+    
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        opacity: .2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+}
+
+body.gnav{
+    overflow: hidden;
+}
+
+.gnav_ico{
+    transition: opacity .45s ease;
+    
+    div{
+        opacity: 1;
+        transition: opacity, transform;
+        transform: scale(1);
+        transition-duration: .25s;
+    }
+}
+
+.is_pc .gnav_ico:hover,
+.is_sp .gnav_ico.touch{
+    div{
+        transform: scaleX(.85);
+        transition-duration: .25s;
+        transition-delay: .0s;
+        transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+}
+
+body.gnav{
+    .gnav_ico{
+        div{
+            opacity: 1;
+            transform: translateX(-23%);
+            animation-name: gnavClose;
+            animation-fill-mode: forwards;
+            animation-duration: .55s;
+            
+            span{
+                transform-origin: center;
+            }
+            
+            .t{
+                transform: rotate(18.5deg) translateX(54%);
+            }
+            
+            .m{
+                opacity: 0;
+            }
+            
+            .b{
+                transform: rotate(-18.5deg) translateX(54%);
+            }
+        }
+    }
+}
+
+
+}/* ----- breakpoint sp ----- */
+
+@keyframes gnavClose{
+0%{
+    opacity: 0;
+    transform: scaleY(1.6) translate(-23%);
+}
+
+100%{
+    opacity: 1;
+    transform: scaleX(1) translate(-23%);
+}
+
+}

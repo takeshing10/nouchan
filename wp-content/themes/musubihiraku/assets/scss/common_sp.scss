@@ -1,0 +1,241 @@
+@import 'common_settings';
+
+@charset "utf-8";
+/*------------------------------------------------------------------------------------------
+*
+*
+    common_sp.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+@include breakpoint(sp){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    max-width : 750px
+*
+*
+------------------------------------------------------------------------------------------ */
+body{
+    width: 100vw;
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+/* --------------------------------------------------
+*
+    common settings sp
+*
+-------------------------------------------------- */
+
+.page_container{
+    background-color: #fff;
+}
+/* --------------------------------------------------
+*
+    common settings
+*
+-------------------------------------------------- */
+body{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+br.sp{ display: inherit;}
+img.pc{ display: none;}
+.switch_pc,
+.switch_pc *{ display: none;}
+
+main{
+    background-color: #fff;
+    position: relative;
+}
+
+main{
+    z-index: 2;
+}
+
+.copyright{
+    display: none;
+}
+
+/* --------------------------------------------------
+* 
+    header
+*
+-------------------------------------------------- */
+
+h1{
+    font-size: vs(32);
+    letter-spacing: .15em;
+    font-weight: bold;
+    position: fixed;
+    top: vs(56);
+    left: vs(40);
+    z-index: 65535;
+}
+
+
+/* --------------------------------------------------
+* 
+    header
+*
+-------------------------------------------------- */
+.gnav_ico{
+    width: vs(180);
+    height: vs(143);
+    position: fixed;
+    z-index: 10001;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    
+    div{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scaleX(.75);
+        
+        span{
+            width: vs(80);
+            height: 2px;
+            background-color: #d7d7d7;
+            position: absolute;
+            right: vs(50);
+            
+            &.t{ top: vs(56);}
+            &.m{ top: vs(70);}
+            &.b{ top: vs(84);}
+        }
+    }
+}
+
+.switch_sp.ig{
+    width: vs(48);
+    height: vs(48);
+    position: fixed;
+    top: vs(46);
+    right: vs(260);
+    z-index: 20000;
+    
+    svg{
+        width: vs(48);
+        height: vs(48);
+    }
+}
+
+.switch_sp.tw{
+    width: vs(48);
+    height: vs(48);
+    position: fixed;
+    top: vs(46);
+    right: vs(170);
+    z-index: 20000;
+    
+    svg{
+        width: vs(48);
+        height: vs(48);
+    }
+}
+
+
+#gnav{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    background-color: #fff;
+    border-right: 1px solid #ececec;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    
+/*
+    opacity: 0;
+    visibility: hidden;
+*/
+    .copy{
+        margin-top: vs(80);
+        font-size: vs(18);
+        letter-spacing: .19em;
+    }
+
+    .nav_wrap{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    
+    nav{
+        width: 100%;
+        min-height: 100%;
+        padding: vs(120) 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1000;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+        > ul{
+            
+            li{
+                font-size: vs(38);
+                letter-spacing: .23em;
+                line-height: lh(79.92/38);
+                margin-bottom: vs(20);
+                
+                a{
+                    display: block;
+                    color: #000;
+                }
+                
+            }
+            
+            &.site_nav{
+                margin-bottom: vs(35);
+                padding-bottom: vs(25);
+                position: relative;
+            }
+            
+            &.ex_nav{
+                li{
+                    margin-bottom: vs(5);
+                    font-size: vs(30);
+                }
+            }
+        }
+    }
+    
+    .overlay{
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    z-index: 1000;
+}
+
+
+}/* -------------------------------------------------- */
+
+
+@import 'home_sp';
+@import 'work_sp';
+@import 'work-single_sp';
+@import 'about_sp';

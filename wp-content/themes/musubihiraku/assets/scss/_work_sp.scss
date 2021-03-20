@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    work_sp.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+@include breakpoint(sp){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    max-width : 750px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_work{
+
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+.post_list{
+    padding: vs(200) 0;
+    margin: 0 auto;
+    
+    ul{
+        padding: 0 vs(20);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: vs(-80);
+    }
+    
+    li{
+        width: vs(340);
+        height: vs(340);
+        padding: 0 vs(10);
+        margin-bottom: vs(80);
+        box-sizing: border-box;
+            
+        a{
+            display: block;
+        }
+        
+        .bg_inner{
+            background-size: contain;
+            transition: transform .65s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .is_pc &:hover .bg_inner,
+        .is_sp &.touch .bg_inner{
+            transform: scale(1.05);
+        }
+    }
+}
+
+#page_nav{
+    padding: 0 0 vs(80) 0;
+    
+    ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        li{
+            margin: 0 vs(18);
+            
+            span, a{
+                width: vs(60);
+                height: vs(60);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: vs(5);
+                border-bottom: 1px solid #eee;
+                transition: border .15s ease;
+            }
+            
+            span{
+                border-color: #000;
+            }
+            
+            .is_pc & a:hover,
+            .is_sp & a.touch{
+                border-color: #000;
+            }
+        }
+    }
+}
+
+}
+
+
+}/* -------------------------------------------------- */

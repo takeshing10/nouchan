@@ -1,0 +1,178 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    work_pc.css
+*
+*
+------------------------------------------------------------------------------------------ */
+.set_bg{
+    overflow: inherit !important;
+}
+
+@include breakpoint(pc){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    min-width : 751px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_work{
+
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+.post_list{
+    @include w_size(1200);
+    padding: vp(180) 0 vp(120) 0;
+    margin: 0 auto;
+    
+    ul{
+        padding: 0 vp(80);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li{
+        width: 33.333%;
+        height: vp(280);
+        padding: 0 vp(20);
+        box-sizing: border-box;
+        
+
+            
+        a{
+            display: block;
+        }
+        
+        .bg_inner{
+            background-size: contain;
+            transition: transform .65s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .is_pc &:hover .bg_inner,
+        .is_sp &.touch .bg_inner{
+            transform: scale(1.05);
+        }
+    }
+}
+
+#page_nav{
+    padding: 0 0 vp(120) 0;
+    ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        li{
+            margin: 0 10px;
+            
+            span, a{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #eee;
+                transition: border .15s ease;
+            }
+            
+            span{
+                border-color: #000;
+            }
+            
+            .is_pc & a:hover,
+            .is_sp & a.touch{
+                border-color: #000;
+            }
+        }
+    }
+}
+
+}
+}/* -------------------------------------------------- */
+
+
+
+@include breakpoint(pc_max){
+
+
+#page_work{
+
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+.post_list{
+    @include w_size(1200);
+    padding: vp_max(180) 0 vp_max(120) 0;
+    margin: 0 auto;
+    
+    ul{
+        padding: 0 vp_max(80);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li{
+        width: 33.333%;
+        height: vp_max(280);
+        padding: 0 vp_max(20);
+        box-sizing: border-box;
+            
+        a{
+            display: block;
+        }
+        
+        .bg_inner{
+            background-size: contain;
+            transition: transform .65s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .is_pc &:hover .bg_inner,
+        .is_sp &.touch .bg_inner{
+            transform: scale(1.05);
+        }
+    }
+}
+
+#page_nav{
+    padding: 0 0 vp_max(120) 0;
+    ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        li{
+            margin: 0 10px;
+            
+            span, a{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #eee;
+                transition: border .15s ease;
+            }
+            
+            span{
+                border-color: #000;
+            }
+            
+            .is_pc & a:hover,
+            .is_sp & a.touch{
+                border-color: #000;
+            }
+        }
+    }
+}
+
+}
+
+} /* ----- min-width : 1400px ----- */

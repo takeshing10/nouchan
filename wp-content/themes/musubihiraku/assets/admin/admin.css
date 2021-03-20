@@ -1,0 +1,223 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------------------
+*
+*
+    admin.css
+*
+*
+------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------
+*
+    投稿管理画面
+*
+-------------------------------------------------- */
+.column-img img,
+.column-main_img img,
+.column-profile_img img{
+    width: 100% !important;
+    max-width: 120px !important;
+}
+
+.column-img img.v,
+.column-main_img img.v,
+.column-profile_img img.v{
+    width: auto !important;
+    height: 100%;
+    max-height: 120px !important;
+}
+
+span.img_box{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    display: block;
+    background-color: #ddd;
+}
+
+span.img_box img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-wrap img{
+    width: 100% !important;
+    max-width: 180px !important;
+}
+
+.acf-field[data-name="img_field"] tr{ display: inline-block; max-width: 320px !important; width: 32% !important;}
+.acf-field[data-type="image"] img{ width: 100% !important;}
+
+#toplevel_page_edit-post_type-acf-field-group .wp-submenu li:last-child{ display: none !important;}
+
+.acf-editor-wrap:before{
+    content: 'Shift + Enterで改行\A Enterで段落';
+    display: block;
+    white-space: pre;
+    font-size: 13px;
+    line-height: 1.5em;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+
+/*
+    tinymce link window
+    2 3 4
+*/
+.mce-floatpanel .mce-formitem:nth-child(1),
+.mce-floatpanel .mce-formitem:nth-child(3),
+.mce-floatpanel .mce-formitem:nth-child(4),
+.mce-floatpanel .mce-formitem:nth-child(5),
+.wp-link-text-field,
+#wplink-link-existing-content,
+#link-selector #search-panel{ display: none !important;}
+
+#wp-admin-bar-new-content{ display: none;}
+
+
+.tablenav.top .bulkactions{ overflow: inherit !important;}
+.tablenav.top .bulkactions select,
+.tablenav.top .bulkactions label,
+.tablenav.top .bulkactions input{ display: none !important;}
+.tablenav.top .bulkactions:after{
+    content: 'ドラッグで並び替えができます';
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+/*--------------------------------------------------
+*
+    Single
+*
+-------------------------------------------------- */
+.acf-field-image[data-name="item_pattern_img"] img{
+    background-color: #ccc;
+}
+
+.acf-field[data-name="item_repeater"] .acf-row-handle,
+.acf-field[data-name="item_repeater"] .acf-fields{
+    border-top: 10px solid #aaa;
+    border-bottom: 10px solid #aaa;
+}
+
+.acf-field[data-name="item_repeater"] .acf-row-handle{
+    background-color: #aaa;
+    color: #fff;
+}
+
+.acf-field[data-name="item_repeater"] input,
+.acf-field[data-name="item_repeater"] textarea{
+    border: 1px solid #999;
+}
+
+
+.edit-php.post-type-work .posts tr:first-child{
+    display: none;
+}
+
+.edit-php.post-type-work #the-list{
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.edit-php.post-type-work .level-0{
+    width: 20% !important;
+    padding-bottom: 20px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    position: relative !important;
+    box-sizing: border-box;
+    border: 1px dashed #aaa;
+}
+
+.edit-php.post-type-work .check-column{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.edit-php.post-type-work .ui-sortable-helper{
+    padding: auto !important;
+    margin: auto !important;
+    position: absolute !important;
+}
+
+.edit-php.post-type-work .column-title{
+    padding-left: 40px;
+    line-height: 1.3em;
+}
+
+.edit-php.post-type-work .column-title strong a{
+    font-size: 120% !important;
+}
+
+.edit-php.post-type-work .column-title strong .post-state{
+    font-size: 12px !important;
+    font-weight: normal !important;
+    color: #ff0000;
+}
+
+.edit-php.post-type-work .row-actions{
+    font-size: 85%;
+    line-height: 1.3em;
+}
+
+.edit-php.post-type-work .column-pic{
+    text-align: center;
+    width: 100%;
+}
+
+.edit-php.post-type-work .column-pic img{
+    width: 100px !important;
+}
+
+.edit-php.post-type-work .column-season{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.edit-php.post-type-work .column-season:before{
+}
+
+.edit-php.post-type-work .column-date{
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-php.post-type-work .column-date abbr{
+    margin-left: 1em;
+}
+
+.edit-php.post-type-work .column-date abbr:before{
+}
+
+
+.edit-php.post-type-work #tax_season-tabs{
+    display: none;
+}
+
+.edit-php.post-type-work #tax_season-adder{
+    display: none;
+}
+
+
+.edit-php.post-type-work #minor-publishing-actions:after{
+    content: "プレビューが反映されない場合には\A再度押してください";
+    white-space: pre;
+    margin: 10px 0 15px auto;
+    text-align: right;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.3em;
+    display: inline-block;
+}

@@ -1,0 +1,77 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    home_pc.css
+*
+*
+------------------------------------------------------------------------------------------ */
+.set_bg{ opacity: 0;}
+.set_bg.on{ opacity: 1; transition: opacity .65s ease;}
+
+@include breakpoint(pc){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    min-width : 751px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_home{
+
+.post_list{
+    @include w_size(1200);
+    margin: 0 auto;
+    
+    li{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: vp(120) 0;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        img{
+            max-width: 100%;
+        }
+        
+        a{
+            display: block;
+        }
+        
+        .bg_inner{
+            background-size: auto;
+            transition: transform .65s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        
+        .is_pc &:hover .bg_inner,
+        .is_sp & .bg_inner{
+            transform: scale(1.03);
+        }
+    }
+}
+
+}
+}/* -------------------------------------------------- */
+
+
+
+
+@include breakpoint(pc_max){
+    
+#page_home{
+
+.post_list{
+    @include w_size(1200);
+    margin: 0 auto;
+    
+    li{
+        padding: vp_max(120) 0;
+    }
+}
+
+}
+
+} /* ----- min-width : 1400px ----- */

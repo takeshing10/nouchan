@@ -1,0 +1,193 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    work_sp.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+@include breakpoint(sp){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    max-width : 750px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_work-single{
+
+#post_body{
+    min-height: 100vh;
+    padding: vs(180) vs(30) vs(240) vs(30);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    
+    div:last-child{
+        margin-bottom: 0 !important;
+    }
+    
+    .img{
+        width: 100%;
+        margin: 0 auto;
+        max-height: 100vh;
+        display: block;
+        margin-bottom: vs(60);
+        text-align: center;
+        box-sizing: border-box;
+        
+        .bg_inner{
+            max-height: 100vh;
+            background-size: contain;
+        }
+        
+        img{
+            max-width: 100%;
+        }
+    }
+    
+    .txt_wrap{
+        padding: 0 vs(40);
+        margin-bottom: vs(80);
+        
+        h4{
+            margin-top: vs(60);
+            margin-bottom: vs(40);
+            font-weight: bold;
+            font-size: vs(40);
+            letter-spacing: .12em;
+            left: vs(-30);
+            position: relative;
+        }
+        
+        p + h4{
+            margin-top: vs(120);
+        }
+        
+        p{
+            font-size: vs(28);
+            margin-bottom: 2em;
+            letter-spacing: .08em;
+            line-height: 2em;
+            
+            &:last-child{
+                margin-bottom: 0;
+            }
+            
+            strong{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+}
+
+.prev_post{
+    width: vs(92);
+    height: vs(120);
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    left: vs(30);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    
+    a{
+        width: vs(92);
+        height: vs(120);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: transform .15s ease;
+            
+        .is_pc &:hover,
+        .is_sp &.touch{
+            transform: translateX(-5px) scale(1.1);
+        }
+    }
+    
+    span.w{
+        position: relative;
+    }
+    
+    span.t, span.b{
+        width: vs(92);
+        height: 1px;
+        display: block;
+        background-color: #aaa;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: left;
+        
+        &.t{
+            transform: rotate(25deg);
+            width: vs(92*.45);
+        }
+        &.b{
+            transform: rotate(0);
+        }
+    }
+}
+
+.fixed_container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.next_post{
+    width: vs(92);
+    height: vs(120);
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+    right: vs(30);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    
+    a{
+        width: vs(92);
+        height: vs(120);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        transition: transform .15s ease;
+        
+        .is_pc &:hover,
+        .is_sp &.touch{
+            transform: translateX(5px) scale(1.1);
+        }
+    }
+    
+    span.w{
+        position: relative;
+    }
+    
+    span.t, span.b{
+        width: vs(92);
+        height: 1px;
+        display: block;
+        background-color: #aaa;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform-origin: right;
+        
+        &.t{
+            transform: rotate(0);
+
+        }
+        &.b{
+            transform: rotate(-25deg);
+            width: vs(92*.45);
+        }
+    }
+}
+}/* -------------------------------------------------- */

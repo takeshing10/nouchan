@@ -1,0 +1,243 @@
+@import 'common_settings';
+/*------------------------------------------------------------------------------------------
+*
+*
+    common_pc.css
+*
+*
+------------------------------------------------------------------------------------------ */
+
+.enter.onResize{
+    *{
+        transition: inherit !important;
+    }
+}
+
+h1{
+    a{
+        color: #fff;
+    }
+    mix-blend-mode: difference;
+}
+
+.isIE h1{
+    a{
+        color: #000 !important;
+    }
+    mix-blend-mode: inherit !important;
+}
+
+.isEdge h1{
+    a{
+        color: #000 !important;
+    }
+    mix-blend-mode: inherit !important;
+}
+
+@include breakpoint(pc){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    min-width : 751px
+*
+*
+------------------------------------------------------------------------------------------ */
+.page_container{
+    background-color: #fff;
+}
+
+/* --------------------------------------------------
+*
+    common settings
+*
+-------------------------------------------------- */
+body{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+br.sp{ display: none;}
+img.sp{ display: none;}
+.switch_sp,
+.switch_sp *{ display: none;}
+
+main{
+    background-color: #fff;
+    position: relative;
+}
+
+main{
+    z-index: 2;
+}
+
+.copyright{
+    font-size: vp(10);
+    color: #888;
+    position: fixed;
+    bottom: vp(20);
+    right: vp(20);
+    z-index: 10;
+}
+
+/* --------------------------------------------------
+* 
+    header
+*
+-------------------------------------------------- */
+
+h1{
+    font-size: vp(20);
+    font-weight: bold;
+    letter-spacing: .18em;
+    position: fixed;
+    top: vp(36);
+    left: vp(40);
+    z-index: 1000;
+}
+
+#gnav{
+    position: fixed;
+    top: vp(40);
+    right: vp(60);
+    z-index: 10;
+    
+    ul{
+        display: flex;
+        align-items: center;
+        
+        li{
+            margin-left: vp(50);
+            font-size: vp(16);
+            letter-spacing: .08em;
+        }
+        
+        a{
+            display: block;
+            transition: border .15s ease;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 5px;
+        }
+        
+        .ig a{
+            border: none !important;
+            transition: opacity .15s ease;
+            
+            .is_pc &:hover,
+            .is_sp &.touch{
+                opacity: .7;
+            }
+        }
+        
+        .tw a{
+            border: none !important;
+            transition: opacity .15s ease;
+            
+            .is_pc &:hover,
+            .is_sp &.touch{
+                opacity: .7;
+            }
+            
+            svg{
+                width: 28px;
+                height: auto;
+            }
+        }
+    }
+}
+
+#gnav li.on a,
+.is_pc #gnav li:hover a,
+.is_sp #gnav li.touch a{
+    border-bottom: 1px solid #888;
+}
+
+
+}/* -------------------------------------------------- */
+
+
+@include breakpoint(pc_max){
+
+/* --------------------------------------------------
+*
+    common settings
+*
+-------------------------------------------------- */
+body{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+br.sp{ display: none;}
+img.sp{ display: none;}
+.switch_sp,
+.switch_sp *{ display: none;}
+
+main{
+    position: relative;
+}
+
+main{
+    z-index: 2;
+}
+
+
+/* --------------------------------------------------
+* 
+    header
+*
+-------------------------------------------------- */
+.page_container{
+    background-color: #fff;
+}
+
+.copyright{
+    font-size: vp_max(10);
+    color: #888;
+    position: fixed;
+    bottom: vp_max(20);
+    right: vp_max(20);
+    z-index: 10;
+}
+
+/* --------------------------------------------------
+* 
+    header
+*
+-------------------------------------------------- */
+
+h1{
+    font-size: vp_max(20);
+    letter-spacing: .18em;
+    position: fixed;
+    top: vp_max(36);
+    left: vp_max(40);
+    z-index: 1000;
+}
+
+#gnav{
+    position: fixed;
+    top: vp_max(36);
+    right: vp_max(60);
+    z-index: 10;
+    
+    ul{
+        display: flex;
+        align-items: center;
+        
+        li{
+            margin-left: vp_max(50);
+            font-size: vp_max(16);
+            letter-spacing: .08em;
+        }
+    }
+}
+
+
+} /* ----- min-width : 1440px ----- */
+
+@import 'home_pc';
+@import 'work_pc';
+@import 'work-single_pc';
+@import 'about_pc';
+
+@import 'transition/trans_movepage';

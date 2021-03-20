@@ -1,0 +1,70 @@
+02/07/19 10:47:30: common_pc.scss - Undefined variable $min_width: line: 15
+02/07/19 10:47:30: home_pc.scss - Undefined variable $min_width: line: 15
+02/07/19 10:48:31: common_pc.scss - Undefined variable $min_width: line: 15
+02/07/19 10:48:31: home_pc.scss - Undefined variable $min_width: line: 15
+02/07/19 10:49:30: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:49:30: home_pc.scss - Undefined mixin w_size_fix: line: 36
+02/07/19 10:50:31: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:51:30: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:52:31: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:53:30: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:54:31: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:55:30: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:56:31: common_pc.scss - Undefined variable $min_width: line: 37
+02/07/19 10:56:31: common_sp.scss - Undefined variable $min_width: line: 37
+02/07/19 10:57:30: common_pc.scss - Undefined variable $min_width: line: 37
+02/26/19 6:51:18: join_us_pc.scss - unclosed block: failed at `` (stdin) on line 116
+03/03/19 3:00:58: setting.scss - unclosed block: failed at `` (stdin) on line 583
+03/05/19 2:05:37: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:06:42: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:07:43: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:09:43: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:11:43: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:13:43: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:14:07: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:14:44: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:14:44: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:15:11: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:15:48: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:23: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:24: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:33: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:45: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:55: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:16:58: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:17:48: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:18:02: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:18:49: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:18:52: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:18:59: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:19:05: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:19:06: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:19:34: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:19:38: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:19:48: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:21:19: setting.scss - unclosed block: failed at `` (stdin) on line 616
+03/05/19 2:21:49: setting.scss - unclosed block: failed at `` (stdin) on line 616
+09/17/19 8:28:00: common_pc.scss - unexpected }: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/_collection_pc.scss on line 125
+10/01/19 11:48:45: common_pc.scss - unexpected }: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/_stockist_pc.scss on line 39
+10/01/19 11:48:54: common_pc.scss - unexpected }: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/_stockist_pc.scss on line 39
+10/01/19 11:49:00: common_pc.scss - unexpected }: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/_stockist_pc.scss on line 39
+10/05/19 7:18:30: common_pc.scss - parse error: failed at `position` (stdin) on line 198
+10/11/19 4:11:10: common_pc.scss - unclosed block: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/transition/_trans_movepage.scss on line 286
+10/11/19 6:37:10: common_pc.scss - parse error: failed at `transition: ;` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/transition/_trans_movepage.scss on line 157
+10/11/19 6:39:11: common_pc.scss - parse error: failed at `transition: ;` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/transition/_trans_movepage.scss on line 157
+10/12/19 11:25:14: common_pc.scss - unclosed block: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/_collection-detail_pc.scss on line 421
+10/12/19 11:30:56: common_pc.scss - unclosed block: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/transition/_trans_collection-single.scss on line 409
+10/15/19 7:45:55: common_pc.scss - 0.025s*s isn't a valid CSS value.: line: 127
+10/15/19 7:45:57: common_pc.scss - 0.025s*s isn't a valid CSS value.: line: 127
+10/25/19 12:33:07: common_pc.scss - unclosed block: failed at `` /home/reinakamura/reinakamura.com/public_html/rito/rito/wp-content/themes/2019/assets/scss/transition/_trans_movepage.scss on line 1596
+11/03/19 11:51:19: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:20: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:22: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:24: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:26: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:27: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:32: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:34: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:35: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:35: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20
+11/03/19 11:51:37: common_sp.scss - parse error: failed at `min-height: 100vh；` /home/reinakamura/reinakamura.com/public_html/sub03/tr/wp-content/themes/2019/assets/scss/_portfolio-single_sp.scss on line 20

@@ -1,0 +1,68 @@
+/*
+    set break point
+*/
+$def_width: 1400;
+$max_width: 1400px;
+$break_point_pc: 751px;
+$break_point_sp: 750px;
+//
+$max_width_v: 1400;
+$min_width_v: 751;
+$max_width_sp: 750;
+
+
+@mixin breakpoint($size){
+    $pc: '(min-width: #{$break_point_pc})';
+    $pc_max_m: '(min-width: #{$max_width})';
+    $sp: '(max-width: #{$break_point_sp})';
+    
+    @if $size == sp{ @media screen and #{$sp}{ @content; } }
+    @if $size == pc{ @media screen and #{$pc}{ @content; } }
+    @if $size == pc_max{ @media screen and #{$pc_max_m}{ @content; } }
+}
+
+
+/*
+    Width / Height Settings
+*/
+@mixin w_size($size){
+    width: $size / $def_width * 100vw !important;
+    max-width: $size + 'px' !important;
+}
+
+@mixin h_size($size){
+    height: $size / $def_width * 100vw !important;
+    max-height: $size + 'px' !important;
+}
+
+
+/*
+    Line Height
+*/
+@function lh($val){
+    $_val: $val + 'em';
+    @return $_val;
+}
+
+
+/*
+    SP Liquid Value
+*/
+@function vs($val){
+    $_val: $val / $max_width_sp * 100vw;
+    @return $_val;
+}
+
+
+/*
+    PC Liquid Value
+*/
+@function vp($val){
+    $_val: $val / $def_width * 100vw;
+    @return $_val;
+}
+
+@function vp_max($val){
+    $_val: $val * ($max_width_v / $def_width) + 'px';
+    @return $_val;
+}

@@ -1,0 +1,151 @@
+// @import 'fonts';
+@import 'common_settings';
+
+@charset "utf-8";
+/*------------------------------------------------------------------------------------------
+*
+*
+    setting.css
+*
+*
+------------------------------------------------------------------------------------------ */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}/*HTML5display-roleresetforolderbrowsers*/article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
+
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #000;
+    font-size : 16px;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: "palt" 1;
+    word-break: normal;
+    position: relative;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    overflow-x: hidden !important;
+}
+
+body.is_pc{
+    overflow-y: scroll !important;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+a, li, p, div, button{ outline: none !important; }
+a{ color: #000; text-decoration: none;}
+a, p, div, li, dd, dt{ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+img, svg{ height: auto; backface-visibility: hidden; -webkit-backface-visibility: hidden;}
+.disabled{ cursor: default !important;}
+.disabled a{ cursor: default !important;}
+
+.is_pc .device_sp{ display: none !important;}
+.is_sp .device_pc{ display: none !important;}
+
+input[type="submit"],
+input[type="button"] { border-radius: 0; -webkit-box-sizing: content-box; -webkit-appearance: button; appearance: button; border: none; box-sizing: border-box; cursor: pointer;}
+input[type="submit"]::-webkit-search-decoration, input[type="button"]::-webkit-search-decoration { display: none; }
+input[type="submit"]::focus, input[type="button"]::focus { outline-offset: -2px; }
+select{ -webkit-appearance: none; -moz-appearance: none; outline: none; border: none; -moz-outline-style: none;}
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+input::-moz-focus-inner, button::-moz-focus-inner {
+  border: 0;
+}
+input[type=radio],
+input[type=checkbox]{ display: none;}
+
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+
+/* -------------------- font-face  --------------------*/
+.ff_smooth{ -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+
+
+.set_bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  
+  .set_bg .bg_inner {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .set_bg img {
+    width: 100%;
+    opacity: 0;
+  }
+
+
+/* ==================================================
+*
+    font style
+*
+================================================== */
+.fs_just, .fs_just p, .fs_just li, .fs_just dt, .fs_just dd{
+    text-align: justify !important;
+    text-justify: inter-ideograph !important;
+}
+
+@include breakpoint(sp){
+@for $i from 18 through 64{
+    .fz#{$i}_s{ font-size: vs(#{$i});}
+}
+
+} /* ----- max-width : 750px ----- */
+
+
+@include breakpoint(pc){ 
+@for $i from 8 through 64{
+    .fz#{$i}{ font-size: calc(#{$i} / 1400 * 100vw);}
+}
+.fz11_5{ font-size: vp(11.5);}
+.fz13_5{ font-size: vp(13.5);}
+.fz26_5{ font-size: vp(26.5);}
+
+@for $i from 8 through 64{
+    .fz#{$i}_f{ font-size: #{$i}px !important;}
+}
+.fz11_5_f{ font-size: 11.5px !important;}
+.fz13_5_f{ font-size: 13.5px !important;}
+.fz26_5_f{ font-size: 26.5px !important;}
+
+} /* ----- min-width : 751px ----- */
+
+
+@include breakpoint(pc_max){
+@for $i from 8 through 64{
+    .fz#{$i}{ font-size: #{$i}px !important;}
+}
+.fz11_5{ font-size: 11.5px !important;}
+.fz13_5{ font-size: 13.5px !important;}
+.fz26_5{ font-size: 26.5px !important;}
+
+} /* ----- min-width : 1440px ----- */

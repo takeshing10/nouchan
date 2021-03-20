@@ -1,0 +1,168 @@
+/*------------------------------------------------------------------------------------------
+*
+*
+    about_pc.css
+*
+*
+------------------------------------------------------------------------------------------ */
+@include breakpoint(pc){ 
+/*------------------------------------------------------------------------------------------
+*
+*
+    min-width : 751px
+*
+*
+------------------------------------------------------------------------------------------ */
+#page_about{
+width: 100%;
+height: 100vh;
+display: table;
+vertical-align: middle;
+padding: vp(180) 0 vp(100) 0;
+box-sizing: border-box;
+
+#profile_wrap{
+    display: table-cell;
+    vertical-align: middle;
+
+    .inner{
+        width: 480px;
+        margin: 0 auto;
+        
+        .w{
+            position: relative;
+            padding: 0 10px;
+            
+            &:after{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 1px;
+                background-color: #ccc;
+                position: absolute;
+                left: 0;
+                top: -25px;
+            }
+        }
+        
+        h2{
+            font-size: 14px;
+            letter-spacing: .12em;
+            margin-bottom: 55px;
+        }
+        
+        h3{
+            margin-bottom: 15px;
+            font-size: 18px;
+            letter-spacing: .12em;
+            font-weight: bold;
+        }
+        
+        h4{
+            margin-bottom: 15px;
+            font-size: 18px;
+            letter-spacing: .06em;
+            font-weight: bold;
+        }
+        
+        .job{
+            font-size: 13px;
+            letter-spacing: .08em;
+            margin-bottom: 20px;
+        }
+        
+        .desc{
+            margin-bottom: 80px;
+            
+            p{
+                font-size: 13px;
+                margin-bottom: 1.5em;
+                line-height: 2em;
+                letter-spacing: .08em;
+            }
+        }
+    }
+}
+
+}
+}/* -------------------------------------------------- */
+
+
+
+
+@include breakpoint(pc_max){
+
+#page_about{
+width: 100%;
+height: 100vh;
+display: table;
+vertical-align: middle;
+padding: vp_max(180) 0 vp_max(100) 0;
+box-sizing: border-box;
+
+#profile_wrap{
+    display: table-cell;
+    vertical-align: middle;
+
+    .inner{
+        width: 480px;
+        margin: 0 auto;
+        
+        .w{
+            position: relative;
+            padding: 0 10px;
+            
+            &:after{
+                content: '';
+                display: block;
+                width: 20px;
+                height: 1px;
+                background-color: #ccc;
+                position: absolute;
+                left: 0;
+                top: -25px;
+            }
+        }
+        
+        h2{
+            font-size: 14px;
+            letter-spacing: .12em;
+            margin-bottom: 55px;
+        }
+        
+        h3{
+            margin-bottom: 15px;
+            font-size: 18px;
+            letter-spacing: .12em;
+            font-weight: bold;
+        }
+        
+        h4{
+            margin-bottom: 15px;
+            font-size: 18px;
+            letter-spacing: .06em;
+            font-weight: bold;
+        }
+        
+        .job{
+            font-size: 13px;
+            letter-spacing: .08em;
+            margin-bottom: 20px;
+        }
+        
+        .desc{
+            margin-bottom: 80px;
+            
+            p{
+                font-size: 13px;
+                margin-bottom: 1.5em;
+                line-height: 2em;
+                letter-spacing: .08em;
+            }
+        }
+    }
+}
+
+}
+
+} /* ----- min-width : 1400px ----- */

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="多角形_1" data-name="多角形 1" class="cls-1" d="M842.292,688.579l9.8-6.582-9.8-6.582" transform="translate(-842 -675)"/>
+</svg>
